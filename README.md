@@ -1,30 +1,88 @@
-# React + TypeScript + Vite
+# React TypeScript Todo List (ViteJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Todo List application created using ViteJS, React, and TypeScript. The application allows users to manage todos effectively with a modern and fast development environment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Todo:** Easily add new todos to the application.
+- **View Todos:** Clear view of all existing todos.
+- **Context-Based State Management:** Utilizes context for efficient state management across components.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository to your local machine:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/August269/React-ts-todolist-vitejs.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+
+```bash
+cd React-ts-todolist-vitejs
+```
+
+3. Install the required dependencies:
+
+```bash
+npm install
+```
+
+## Usage
+
+To start the development server, run the following command:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`.
+
+## Folder Structure
+
+The project follows a structured layout for better organization:
+
+```
+React-ts-todolist-vitejs/
+  ├── src/
+  │   ├── components/
+  │   │   ├── TodoList.tsx
+  │   │   ├── TodoItem.tsx
+  |   |   ├── NewTodo.tsx
+  │   ├── context/
+  │   │   ├── todoContext.tsx
+  │   ├── models/
+  │   │   ├── todo.ts
+  │   ├── App.tsx
+  │   ├── index.tsx
+  ├── public/
+  │   ├── index.html
+  ├── package.json
+  ├── tsconfig.json
+  ├── README.md
+```
+
+## Technology Stack
+
+The project utilizes the following technologies:
+
+- ViteJS
+- React
+- TypeScript
+- React Context API
+- HTML5
+- CSS3
+
+## Contributing
+
+Contributions to this project are welcome! If you find any bugs or want to add new features, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+Thanks to all the contributors and developers whose libraries, code snippets, and insights have been used in this project.
+
+Happy Todo-ing! 😄
