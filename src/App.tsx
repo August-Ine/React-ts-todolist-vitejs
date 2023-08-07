@@ -1,15 +1,14 @@
-import TodoList from './components/TodoList'
-
-const DUMMY_TODOS = ['learn nextjs', 'learn angular']
+import { ContextProvider } from "./context/todoContext";
+import TodoList from "./components/TodoList";
+import NewTodo from "./components/NewTodo";
 
 function App() {
-
-
   return (
-    <>
-    <TodoList items={DUMMY_TODOS} />
-    </>
-  )
+    <ContextProvider>
+      <NewTodo />
+      <TodoList />
+    </ContextProvider>
+  );
 }
 
-export default App
+export default App;
